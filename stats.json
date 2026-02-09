@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-02-09T19:23:05.167040",
+  "duration_minutes": 3.25,
+  "collected_vless": 8380,
+  "duplicates_removed": 3211,
+  "unique": 5169,
+  "perfect_configs": 1276,
+  "filtered_out": 3893,
+  "pass_rate": 24.69,
+  "avg_quality_score": 90.5,
+  "transports": {
+    "xhttp": 156,
+    "grpc": 68,
+    "none": 112,
+    "tcp": 926,
+    "raw": 14
+  },
+  "countries": {
+    "NL": 8,
+    "XX": 1201,
+    "DE": 7,
+    "TR": 4,
+    "RU": 28,
+    "HU": 1,
+    "LV": 2,
+    "AL": 2,
+    "LT": 1,
+    "FI": 10,
+    "CZ": 1,
+    "CH": 1,
+    "US": 1,
+    "FR": 3,
+    "JP": 3,
+    "CA": 1,
+    "GB": 2
+  },
+  "criteria": {
+    "protocol": "VLESS только",
+    "security": "Reality обязательно",
+    "sni": "Российские домены",
+    "check": "Ping доступности",
+    "quality_score": "Система оценок"
+  }
+}
