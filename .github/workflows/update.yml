@@ -2,8 +2,7 @@ name: Update Configs
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # Каждые 3 часа
-  workflow_dispatch:  # Ручной запуск
+    
 
 jobs:
   update:
