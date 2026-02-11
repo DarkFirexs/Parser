@@ -2,7 +2,8 @@ name: Update Configs
 
 on:
   schedule:
-    
+    - cron: '0 */3 * * *'  # Каждые 3 часа
+  workflow_dispatch:  # Ручной запуск
 
 jobs:
   update:
@@ -29,6 +30,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
+          git add configs.txt configs_b64.txt
           git diff --quiet && git diff --staged --quiet || git commit -m "Update configs $(date '+%Y-%m-%d %H:%M')"
           git push
